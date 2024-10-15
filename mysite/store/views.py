@@ -1,9 +1,5 @@
 from rest_framework import viewsets, generics, status, permissions
-from audioop import reverse
-from django.http import HttpResponseRedirect
 from requests import Response
-from rest_framework_simplejwt.views import TokenObtainPairView
-from .models import *
 from .serializers import *
 from django_filters.rest_framework import DjangoFilterBackend
 from .filters import ProductFilter

@@ -8,10 +8,10 @@ class ProductPhotosInline(admin.TabularInline):
     extra = 1
 
 
-
 @admin.register(Product)
 class ProductAdmin(TranslationAdmin):
     inlines = [ProductPhotosInline]
+
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',

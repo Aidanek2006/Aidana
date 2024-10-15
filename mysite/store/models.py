@@ -8,7 +8,7 @@ class UserProfile(AbstractUser):
     age = models.PositiveSmallIntegerField(default=0, null=True, blank=True,
                                            validators=[MinValueValidator(15), MaxValueValidator(100)])
     date_registered = models.DateField(auto_now=True,  null=True, blank=True)
-    phone_number = PhoneNumberField( null=True, blank=True, region='KG')
+    phone_number = PhoneNumberField(null=True, blank=True)
     STATUS_CHOICES = (
         ('gold', 'Gold'),
         ('silver', ' Silver'),
